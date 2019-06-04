@@ -6,11 +6,6 @@ def tljh_extra_user_conda_packages():
     return ['voila']
 
 @hookimpl
-def tljh_extra_user_pip_packages():
-    return ['sh']
-
-
-@hookimpl
 def tljh_config_post_install(config):
     """
     Configure /srv/scratch and change configs/mods
